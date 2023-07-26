@@ -475,11 +475,17 @@ navbar {
 @media (max-width: 506px) {
   .container {
     width: 90%;
-    margin: 12px auto; /* Center the container horizontally */
-    padding: 0.8rem; /* Add some padding to the container */
+    margin: 12px auto;
+    padding: 0.8rem;
   }
   img {
     width: 15%;
+    position: absolute;
+    left: 2%;
+    top: 94%;
+    z-index: 2;
+    transform: rotate(30deg);
+    margin: 0;
   }
 
   .nav-item {
@@ -487,14 +493,19 @@ navbar {
   }
 }
 
-/* Media Query for Tablets (min-width: 507px and max-width: 1024px) */
 @media (min-width: 507px) and (max-width: 1024px) {
   .container {
     width: 85%;
-    margin: 1.5rem auto; /* Center the container horizontally */
-    padding: 2rem; /* Increase padding slightly */
+    margin: 1.5rem auto;
+    padding: 2rem;
   }
   img {
     width: 15%;
+    position: absolute;
+    top: 90%;
+    left: 2%;
+    z-index: 2;
+    transform: rotate(30deg);
+    margin: 2rem;
   }
 }
