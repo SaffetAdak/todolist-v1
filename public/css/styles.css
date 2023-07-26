@@ -7,16 +7,14 @@ body {
     rgba(252, 176, 69, 1) 100%
   );
   font-family: "Inconsolata", monospace;
-  margin: 0;
-  overflow: hidden;
+  margin: 0 auto;
 }
 
 img {
-  width: 100px;
-  height: 100px;
+  width: 5%;
   position: absolute;
-  left: 60px;
-  bottom: 80px;
+  left: 2%;
+  bottom: 10%;
   z-index: 2;
   transform: rotate(30deg);
 }
@@ -25,7 +23,6 @@ img {
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: flex-start;
   border-radius: 55px;
   background: rgb(236, 18, 62);
   background: radial-gradient(
@@ -34,10 +31,10 @@ img {
     rgba(15, 0, 22, 0.5) 100%
   );
   color: #bac1cec0;
-  height: 50rem;
-  width: 100rem;
-  margin: 3rem auto;
-  padding: 2rem;
+  height: 800px;
+  width: 90%;
+  padding: 24px;
+  margin: 36px auto;
   -webkit-box-shadow: 13px 10px 35px -1px rgba(0, 0, 0, 0.58);
   -moz-box-shadow: 13px 10px 35px -1px rgba(0, 0, 0, 0.58);
   box-shadow: 13px 10px 35px -1px rgba(0, 0, 0, 0.58);
@@ -80,7 +77,7 @@ navbar {
 }
 
 .big-heading {
-  font-size: 5rem;
+  font-size: 60px;
 }
 
 .list {
@@ -97,8 +94,8 @@ navbar {
 
 .copyright {
   position: absolute;
-  right: 5rem;
-  bottom: 3rem;
+  right: 5%;
+  bottom: 4%;
 }
 
 /***************************/
@@ -475,28 +472,29 @@ navbar {
   }
 }
 
-
-
-/* For screens up to 768px */
-@media (max-width: 768px) {
+@media (max-width: 506px) {
   .container {
-    /* Adjust container styles for smaller screens */
-    width: 90%; /* Or any other appropriate value */
-    margin: 1rem auto; /* Or any other appropriate value */
+    width: 90%;
+    margin: 12px auto; /* Center the container horizontally */
+    padding: 0.8rem; /* Add some padding to the container */
+  }
+  img {
+    width: 15%;
   }
 
-  /* Adjust other styles for smaller screens */
-  /* For example, you might want to reduce the font size or change the layout */
+  .nav-item {
+    margin: 0.8rem;
+  }
 }
 
-/* For screens between 769px and 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* Add styles for screens in this range */
-  /* You may need to adjust font sizes, padding, or margins to fit better on medium-sized screens */
-}
-
-/* For screens larger than 1024px */
-@media (min-width: 1025px) {
-  /* Add styles for larger screens */
-  /* Here you can reset any styles that you may have adjusted for smaller screens */
+/* Media Query for Tablets (min-width: 507px and max-width: 1024px) */
+@media (min-width: 507px) and (max-width: 1024px) {
+  .container {
+    width: 85%;
+    margin: 1.5rem auto; /* Center the container horizontally */
+    padding: 2rem; /* Increase padding slightly */
+  }
+  img {
+    width: 15%;
+  }
 }
